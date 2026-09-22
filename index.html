@@ -9,9 +9,174 @@
 </head>
 <body>
   <!-- SEÇÃO: HEADER (responsável: integrante A) -->
+  <header class="navbar bg-base-100 shadow-md sticky top-0 z-40 px-4 lg:px-10">
+    <div class="navbar-start">
+      <div class="dropdown lg:hidden">
+        <label tabindex="0" class="btn btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#biomas">Biomas</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#footer">Contato</a></li>
+        </ul>
+      </div>
+      <a href="#" class="btn btn-ghost text-xl gap-2">
+        <span class="text-2xl">🌿</span> EcoVida
+      </a>
+    </div>
+  
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 gap-1">
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#biomas">Biomas</a></li>
+        <li><a href="#faq">Dúvidas</a></li>
+        <li><a href="#footer">Contato</a></li>
+      </ul>
+    </div>
+  
+    <div class="navbar-end gap-2">
+      <span class="badge badge-success badge-outline hidden sm:flex">6 biomas</span>
+      <a href="#biomas" class="btn btn-primary">Explorar biomas</a>
+    </div>
+  </header>
   <!-- SEÇÃO: HERO (responsável: integrante B) -->
+  <section id="hero" class="hero min-h-[70vh] bg-gradient-to-br from-green-800 to-green-950 text-white">
+    <div class="hero-content text-center">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Conheça a biodiversidade do Brasil</h1>
+        <p class="text-lg opacity-90 mb-8">
+          Do Cerrado à Amazônia, cada bioma abriga espécies únicas e desafios diferentes de preservação.
+          Explore, aprenda e descubra como ajudar.
+        </p>
+        <a href="#biomas" class="btn btn-primary btn-lg">Ver os biomas</a>
+      </div>
+    </div>
+  </section>
   <!-- SEÇÃO: CARDS (responsável: integrante C) -->
+  <section id="biomas" class="py-16 px-4 lg:px-10 bg-base-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10">Os biomas brasileiros</h2>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🌳</figure>
+          <div class="card-body">
+            <h3 class="card-title">Amazônia</h3>
+            <p>A maior floresta tropical do mundo, com cerca de 1/3 da biodiversidade do planeta.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-success">Floresta</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🌾</figure>
+          <div class="card-body">
+            <h3 class="card-title">Cerrado</h3>
+            <p>A savana mais biodiversa do mundo, considerada o "berço das águas" do Brasil.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-warning">Savana</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🌵</figure>
+          <div class="card-body">
+            <h3 class="card-title">Caatinga</h3>
+            <p>Único bioma exclusivamente brasileiro, adaptado ao clima semiárido do Nordeste.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-error">Semiárido</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🌴</figure>
+          <div class="card-body">
+            <h3 class="card-title">Mata Atlântica</h3>
+            <p>Um dos biomas mais ameaçados do planeta, com menos de 15% da cobertura original.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-error">Ameaçado</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🐊</figure>
+          <div class="card-body">
+            <h3 class="card-title">Pantanal</h3>
+            <p>A maior planície alagável do mundo, refúgio de aves, jacarés e onças-pintadas.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-info">Área úmida</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card bg-base-200 shadow-xl">
+          <figure class="text-6xl pt-6">🌾</figure>
+          <div class="card-body">
+            <h3 class="card-title">Pampa</h3>
+            <p>Campos e coxilhas no extremo sul do país, com vegetação rasteira característica.</p>
+            <div class="card-actions justify-end">
+              <span class="badge badge-success">Campos</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
   <!-- SEÇÃO: FAQ (responsável: integrante D) -->
+  <section id="faq" class="py-16 px-4 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-8 text-center">Perguntas frequentes</h2>
+  
+    <div class="collapse collapse-arrow bg-base-200 mb-2">
+      <input type="radio" name="faq" checked="checked" />
+      <div class="collapse-title text-lg font-medium">Por que os biomas brasileiros são importantes?</div>
+      <div class="collapse-content">
+        <p>Eles regulam o clima, abrigam grande parte da biodiversidade mundial e sustentam recursos hídricos essenciais para o país e o planeta.</p>
+      </div>
+    </div>
+  
+    <div class="collapse collapse-arrow bg-base-200 mb-2">
+      <input type="radio" name="faq" />
+      <div class="collapse-title text-lg font-medium">Qual é o bioma mais ameaçado?</div>
+      <div class="collapse-content">
+        <p>A Mata Atlântica, que já perdeu mais de 85% de sua cobertura original devido à urbanização e agropecuária.</p>
+      </div>
+    </div>
+  
+    <div class="collapse collapse-arrow bg-base-200 mb-2">
+      <input type="radio" name="faq" />
+      <div class="collapse-title text-lg font-medium">Como posso ajudar a preservar esses biomas?</div>
+      <div class="collapse-content">
+        <p>Apoiando projetos de reflorestamento, consumindo de forma consciente e cobrando políticas públicas de proteção ambiental.</p>
+      </div>
+    </div>
+  </section>
   <!-- SEÇÃO: FOOTER (responsável: integrante E) -->
+  <footer id="footer" class="footer footer-center p-10 bg-neutral text-neutral-content">
+    <nav class="grid grid-flow-col gap-4">
+      <a href="#hero" class="link link-hover">Início</a>
+      <a href="#biomas" class="link link-hover">Biomas</a>
+      <a href="#faq" class="link link-hover">Dúvidas</a>
+    </nav>
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <span class="text-xl">🌎</span>
+        <span class="text-xl">📷</span>
+        <span class="text-xl">✉️</span>
+      </div>
+    </nav>
+    <aside>
+      <p>© 2026 EcoVida — Projeto de divulgação sobre biodiversidade brasileira.</p>
+    </aside>
+  </footer>
 </body>
 </html>
